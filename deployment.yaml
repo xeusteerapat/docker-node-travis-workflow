@@ -15,7 +15,7 @@ spec:
         app: my-node-app
     spec:
       containers:
-      - name: simple_node_app2
-        image: xeusteerapat/simple_node_app2
+      - name: udac-node-app
+        image: xeusteerapat/udac-node-app
         ports:
         - containerPort: 80

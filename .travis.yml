@@ -15,9 +15,9 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple_node_app2 .
-  - docker tag simple_node_app2 xeusteerapat/simple_node_app2:latest
+  - docker build -t udac-node-app .
+  - docker tag udac-node-app xeusteerapat/udac-node-app:latest
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push xeusteerapat/simple_node_app2
+  - docker push xeusteerapat/udac-node-app
